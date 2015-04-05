@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Visited subpages",
+  "description": "Shows already visited pages of current website. Increases convenience when browsing pages with complicated navigation.",
+  "version": "0.1",
+  "icons": {
+    "48": "img/icon.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "history", "tabs"
+  ],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
