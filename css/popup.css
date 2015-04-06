@@ -2,7 +2,7 @@ body {
 	width: 500px;
 	min-height: 300px;
 	overflow-x: hidden;
-	padding: 5px;
+	padding-top: 5px;
 }
 
 nav p {
@@ -16,4 +16,12 @@ nav p {
 
 span.preview_url {
 	color: #000000 !important;
+}
+
+#results p {
+	padding: 5px;
+}
+
+#results p:nth-child(even) {
+	background-color: #F8F8F8;
 }
