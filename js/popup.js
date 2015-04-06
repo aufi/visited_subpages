@@ -5,7 +5,7 @@ function load_history(search_text, actual_url) {
   var base_url_span = document.getElementById('base_url');
   base_url_span.innerHTML = search_text;
 
-  chrome.history.search({text: search_text}, function(entries){
+  chrome.history.search({text: search_text, startTime: 0}, function(entries){
     results_div.innerHTML = '';
     entries.forEach(function(entry){
       if (entry.url === actual_url) return;
