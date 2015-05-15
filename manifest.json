@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Visited subpages",
-  "description": "Shows already visited pages of current website. Increases convenience when browsing pages with complicated navigation.",
-  "version": "0.1",
+  "description": "Shows already visited pages on current website. Increases convenience when browsing pages with complicated navigation.",
+  "version": "0.2",
   "icons": {
     "48": "img/icon.png"
   },

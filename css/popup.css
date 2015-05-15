@@ -3,25 +3,45 @@ body {
 	min-height: 300px;
 	overflow-x: hidden;
 	padding-top: 5px;
+	margin: 0px;
+	color: #333;
+}
+a {
+	color: #333;
+	text-decoration: none;
 }
 
-nav p {
-	padding-left: 5px;
-	padding-right: 5px;
+a:hover {
+	text-decoration: underline;
 }
 
 .spinner {
 	margin-top: 100px;
+	text-align: center;
 }
 
 span.preview_url {
-	color: #000000 !important;
+	color: #333 !important;
 }
 
 #results p {
-	padding: 5px;
+	padding: 8px;
+	margin: 0px;
+	word-wrap: break-word;
 }
 
-#results p:nth-child(even) {
+#results p:nth-child(odd) {
 	background-color: #F8F8F8;
+}
+
+header, footer {
+	width: 100%;
+}
+
+header p, footer p {
+	text-align: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 8px;
+	/*border-top: 5px #F8F8F8 solid;*/
 }

@@ -1,7 +1,5 @@
 # Visited Subpages
 
-**Under development**
-
 Chrome extension which shows already visited pages on current website.
 
 If you have suggestions or wishes how to make this extension better, leave an issue or ping me on twitter, thanks:)

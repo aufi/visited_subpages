@@ -6,31 +6,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Marek Aufart">
 <title>Visited Subpages</title>
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen">
 <link type="text/css" rel="stylesheet" href="css/popup.css" media="screen">
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
 
-    <div id="results">
-      <p class="text-center spinner">
-        <img src="img/loading.gif" alt="loading..">
-      </p>
-    </div>
-    </div>
+  <header>
+    <p class="navbar-text navbar-right">
+      <strong><span id="pages_count"></span></strong>
+      visited subpages for
+      <strong><span id="base_url"></span></strong>
+    </p>
+  </header>
 
-    <div class="row">
-      <nav class="navbar navbar-default navbar-fixed-bottom">
-        <p class="navbar-text navbar-right">
-          Visited subpages for
-          <strong><span id="base_url"></span></strong>
-        </p>
-      </nav>
-    </div>
-
+  <div id="results">
+    <p class="text-center spinner">
+      <img src="img/loading.gif" alt="loading..">
+    </p>
   </div>
+
+  <footer>
+    <p>
+      Chrome visited subpages extension
+      |
+      <a href="https://github.com/aufi/visited_subpages">See on github &raquo;</a>
+    </p>
+  </footer>
+
   <script type="text/javascript" src="js/popup.js"></script>
 </body>
 </html>

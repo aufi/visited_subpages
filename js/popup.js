@@ -3,11 +3,14 @@
 function load_history(search_text, actual_url) {
   var results_div = document.getElementById('results');
   var base_url_span = document.getElementById('base_url');
+  var pages_count_span = document.getElementById('pages_count');
   base_url_span.innerHTML = search_text;
 
   chrome.history.search({text: search_text, startTime: 0}, function(entries){
     results_div.innerHTML = '';
-    entries.forEach(function(entry){
+    pages_count_span.innerHTML = entries.length - 1;
+
+    entries.forEach(function(entry, index, array) {
       if (entry.url === actual_url) return;
 
       var entry_html = document.createElement('p');
@@ -16,7 +19,9 @@ function load_history(search_text, actual_url) {
       '</strong> <span class="preview_url">' + entry.url + '</span></a>';
 
       results_div.appendChild(entry_html);
-      create_click_bindings();
+      if (index === array.length - 1) {
+        create_click_bindings();
+      }
     });
     if (results_div.innerHTML === '') results_div.innerHTML = '<p>No pages found.</p>';
   });
