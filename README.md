@@ -4,7 +4,7 @@ Chrome browser extension which shows already visited pages on current domain. It
 
 ## Example
 
-![example window with visited_subpages](https://github.com/aufi/visited_subpages/example1.png)
+![example window with visited_subpages](https://raw.githubusercontent.com/aufi/visited_subpages/master/vs_example1.png)
 
 ## Download
 
@@ -14,6 +14,7 @@ Get current [development version .crx](https://github.com/aufi/visited_subpages/
 
 If you have suggestions or wishes how to make this extension better, leave an issue or ping me on twitter, thanks:)
 
-Marek Aufart [@auficz](https://twitter.com/auficz)
+Marek Aufart
+[@auficz](https://twitter.com/auficz)
 
 Released under GPL license
