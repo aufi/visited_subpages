@@ -3,7 +3,7 @@
 
   "name": "Visited subpages",
   "description": "Shows already visited pages on current website. Increases convenience when browsing pages with complicated navigation.",
-  "version": "0.2",
+  "version": "0.3",
   "icons": {
     "48": "img/icon.png"
   },

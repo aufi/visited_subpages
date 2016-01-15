@@ -8,15 +8,21 @@ function load_history(search_text, actual_url) {
 
   chrome.history.search({text: search_text, startTime: 0}, function(entries){
     results_div.innerHTML = '';
-    pages_count_span.innerHTML = entries.length - 1;
+    if (entries.length > 90) {
+      pages_count_span.innerHTML = 'Many';
+    } else {
+      pages_count_span.innerHTML = entries.length - 1;
+    }
 
     entries.forEach(function(entry, index, array) {
       if (entry.url === actual_url) return;
 
       var entry_html = document.createElement('p');
 
-      entry_html.innerHTML = '<a href="' + entry.url + '"><strong>' + entry.title +
-      '</strong> <span class="preview_url">' + entry.url + '</span></a>';
+      title = entry.title == '' ? 'no title' : entry.title;
+
+      entry_html.innerHTML = '<a href="' + entry.url + '"><strong>' + title +
+      '</strong><br><span class="preview_url">' + entry.url + '</span></a>';
 
       results_div.appendChild(entry_html);
       if (index === array.length - 1) {
